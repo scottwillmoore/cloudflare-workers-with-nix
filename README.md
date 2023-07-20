@@ -18,6 +18,8 @@ workerd/util/symbolizer.c++:99: warning: Not symbolizing stack traces because $L
 workerd/jsg/util.c++:275: error: e = kj/compat/tls.c++:215: failed: TLS peer's certificate is not trusted; reason = unable to get local issuer certificate
 ```
 
+A temporary fix is to `export SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt`.
+
 ## [cloudflare/workers-sdk#3289](https://github.com/cloudflare/workers-sdk/issues/3289)
 
 3. Install NixOS\*
